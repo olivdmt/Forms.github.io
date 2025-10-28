@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+    <section class="container">
+        <div class="titulo">
+            <h1>Formulário de contato</h1>
+        </div>
+        <div class="card-section">
+            <form class="form" action="confirmation.html" method="get">
+                <div class="input-group">
+                    <label for="text">Nome: </label>
+                    <input class="campo" id="nome" type="text" name="nome" autocomplete="off" required>
+                    <span class="mensagemErro" id="mensagemErroNome"></span>
+                </div>
+                <div class="input-group">
+                    <label for="text">Sobrenome: </label>
+                    <input class="campo" id="sobrenome" type="text" name="sobrenome" autocomplete="off" required>
+                    <span class="mensagemErro" id="mensagemErroSobrenome"></span>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input class="campo" id="email" type="email" name="email" autocomplete="off" required>
+                    <span class="mensagemErro" id="mensagemErroEmail"></span>
+                </div>
+                <div class="input-group">
+                    <label for="text">Idade: </label>
+                    <input class="campo" id="idade" type="number" name="idade" autocomplete="off" required>
+                    <span class="mensagemErro" id="mensagemErroIdade"></span>
+                </div>
+                <div class="input-group">
+                    <input onclick="revisarEnvio()" id="btn" class="btn" type="submit" value="Revisar e Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-bottom">
+        <p>&copy; 2025 Mateus Dayson. Front End II</p>
+    </footer>
+
+     <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Dados</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="card-section">
+            <h1>Confirme Seus Dados</h1>
+            <p>Por favor, verifique se as informações estão corretas antes de finalizar:</p>
+            <div class="data">
+                <ul>
+                    <li><strong>Nome:</strong> <span id="display-nome"></span></li><br>
+                    <li><strong>Sobrenome:</strong> <span id="display-sobrenome"></span></li><br>
+                    <li><strong>E-mail:</strong> <span id="display-email"></span></li><br>
+                    <li><strong>Idade:</strong> <span id="display-idade"></span></li>
+                </ul>
+            </div>
+            <div class="send-data">
+                <p>
+                    <a class="link-form" href="form.html">Corrigir Dados</a>
+                    <button class="btn-finish" onclick="finalizarEnvio()">Finalizar Envio</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-bottom">
+        <p>&copy; 2025 Mateus Dayson. Front End II</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
